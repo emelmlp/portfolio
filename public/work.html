@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HJ.Portfolio-work</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/work.css" />
+    <!-- js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/work.js"></script>
+    <!-- icon : fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/11e7012e32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header & footer 전영역, main만 필요에 따라 -->
+    <div class="wrap">
+      <!-- header -->
+      <header class="header" id="top">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html"><span>Portfolio</span></a>
+          </h1>
+          <nav class="menu">
+            <ul>
+              <li class="work">
+                <a href="work.html">
+                  <span>Work</span>
+                </a>
+              </li>
+              <li class="contact">
+                <a href="contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main class="main">
+        <ul class="sort">
+          <li class="on">
+            <a href="*">ALL</a>
+          </li>
+          <li>
+            <a href=".video">VIDEOS</a>
+          </li>
+          <li>
+            <a href=".motion">MOTION-GRAPHICS</a>
+          </li>
+        </ul>
+        <div class="topbtn">
+          <span>Top</span>
+          <a href="#top"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+        <section class="section">
+          <!-- 각 아티클에 data-video 속성을 추가하여 모달에 표시할 비디오 경로 지정 -->
+          <article class="video" data-video="videos/video1.mp4">
+            <div>
+              <img src="imgs/video1.jpg" alt="비디오이미지1" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion1.mp4">
+            <div>
+              <img src="imgs/motion1.jpg" alt="모션이미지1" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="video" data-video="videos/video2.mp4">
+            <div>
+              <img src="imgs/video2.jpg" alt="비디오이미지2" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion2.mp4">
+            <div>
+              <img src="imgs/motion2.jpg" alt="모션이미지2" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="video" data-video="videos/video3.mp4">
+            <div>
+              <img src="imgs/video3.jpg" alt="비디오이미지3" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion3.mp4">
+            <div>
+              <img src="imgs/motion3.jpg" alt="모션이미지3" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="video" data-video="videos/video4.mp4">
+            <div>
+              <img src="imgs/video4.jpg" alt="비디오이미지4" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion4.mp4">
+            <div>
+              <img src="imgs/motion4.jpg" alt="모션이미지4" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="video" data-video="videos/video5.mp4">
+            <div>
+              <img src="imgs/video5.jpg" alt="비디오이미지5" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion1.mp4">
+            <div>
+              <img src="imgs/motion5.jpg" alt="모션이미지5" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="video" data-video="videos/video6.mp4">
+            <div>
+              <img src="imgs/video6.jpg" alt="비디오이미지6" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+          <article class="motion" data-video="videos/motion1.mp4">
+            <div>
+              <img src="imgs/motion6.jpg" alt="모션이미지6" />
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </article>
+        </section>
+        <!-- 모달 영역 -->
+        <div id="video-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modal-video" controls></video>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              eius totam nesciunt ducimus laborum sed ex fuga omnis vel
+              recusandae nisi molestiae sequi accusamus, fugit, eligendi
+              accusantium eum laboriosam facere?
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div>
+          <div class="overlay">
+            <p class="copyright">ⓒ 2024. HJ. ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

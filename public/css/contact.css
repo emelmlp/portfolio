@@ -1,0 +1,106 @@
+/* wrap */
+.wrap {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+/* header */
+.header {
+  position: absolute;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  z-index: 1;
+  background-color: #000;
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+  text-align: center;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 10vw;
+  line-height: 8vh;
+  margin: 0 auto;
+}
+.logo a span {
+  font-size: 2.2rem;
+  line-height: 8vh;
+}
+
+nav.menu {
+  position: relative;
+  display: flex;
+  width: 70vw;
+  justify-content: flex-end;
+}
+.menu ul {
+  position: relative;
+  display: flex;
+}
+.menu ul li {
+  position: relative;
+}
+.menu ul li a {
+  position: relative;
+  display: block;
+  line-height: 8vh;
+  font-size: 15px;
+  padding: 0 15px;
+  letter-spacing: -0.25px;
+  font-weight: 600;
+}
+.manu ul li a span {
+  transition: color 0.3s ease;
+}
+.menu ul li a:hover span {
+  color: #80dfff; /* 밝은 네온블루 */
+}
+.contact a span {
+  border-bottom: 2px solid #00bfff;
+}
+.contact a:hover span {
+  border-bottom: 2px solid #80dfff;
+}
+
+/* main */
+.main {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100vw;
+  object-fit: cover;
+  margin: 0;
+  background-color: #000;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+  bottom: 0;
+  z-index: 1;
+  background-color: #000;
+}
+.footer div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: "Arial";
+  text-align: center;
+}

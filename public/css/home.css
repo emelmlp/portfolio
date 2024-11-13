@@ -1,0 +1,99 @@
+/* wrap */
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+/* header */
+.header {
+  position: relative;
+  height: 8vh;
+  width: 100%;
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+  text-align: center;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 10vw;
+  line-height: 8vh;
+  margin: 0 auto;
+}
+.logo a span {
+  font-size: 2.2rem;
+  line-height: 8vh;
+}
+
+nav.menu {
+  position: relative;
+  display: flex;
+  width: 70vw;
+  justify-content: flex-end;
+}
+.menu ul {
+  position: relative;
+  display: flex;
+}
+.menu ul li {
+  position: relative;
+}
+.menu ul li a {
+  position: relative;
+  display: block;
+  line-height: 8vh;
+  font-size: 15px;
+  padding: 0 15px;
+  letter-spacing: -0.25px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.menu ul li a:hover {
+  color: #80dfff; /* 밝은 네온블루 */
+}
+/* main */
+.main {
+  position: relative;
+  height: 84vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #000;
+}
+.main div {
+  height: 100%;
+  width: 100%;
+}
+.main div video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+}
+.footer div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: "Arial";
+  text-align: center;
+}

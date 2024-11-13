@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HJ.Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- header & footer 전영역, main만 필요에 따라 -->
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html"><span>Portfolio</span></a>
+          </h1>
+          <nav class="menu">
+            <ul>
+              <li class="work">
+                <a href="work.html">
+                  <span>Work</span>
+                </a>
+              </li>
+              <li class="contact">
+                <a href="contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main class="main">
+        <div class="video-background-container">
+          <video autoplay muted loop id="background-video">
+            <source src="videos/bg-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div>
+          <div class="overlay">
+            <p class="copyright">ⓒ 2024. HJ. ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
