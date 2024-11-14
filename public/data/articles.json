@@ -35,6 +35,78 @@
       "p": "두 번째 모션 그래픽의 설명입니다.",
       "title": "모션 2",
       "description": "두 번째 모션 그래픽의 상세 설명입니다."
+    },
+    {
+      "category": "video",
+      "video": "videos/video3.mp4",
+      "image": "imgs/video3.jpg",
+      "h2": "영상 제목 3",
+      "p": "세 번째 영상의 설명입니다.",
+      "title": "비디오 3",
+      "description": "세 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion3.mp4",
+      "image": "imgs/motion3.jpg",
+      "h2": "모션 그래픽 제목 3",
+      "p": "세 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 3",
+      "description": "세 번째 모션 그래픽의 상세 설명입니다."
+    },
+    {
+      "category": "video",
+      "video": "videos/video4.mp4",
+      "image": "imgs/video4.jpg",
+      "h2": "영상 제목 4",
+      "p": "네 번째 영상의 설명입니다.",
+      "title": "비디오 4",
+      "description": "네 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion4.mp4",
+      "image": "imgs/motion4.jpg",
+      "h2": "모션 그래픽 제목 4",
+      "p": "네 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 4",
+      "description": "네 번째 모션 그래픽의 상세 설명입니다."
+    },
+    {
+      "category": "video",
+      "video": "videos/video5.mp4",
+      "image": "imgs/video5.jpg",
+      "h2": "영상 제목 5",
+      "p": "다섯 번째 영상의 설명입니다.",
+      "title": "비디오 5",
+      "description": "다섯 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion5.mp4",
+      "image": "imgs/motion5.jpg",
+      "h2": "모션 그래픽 제목 5",
+      "p": "다섯 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 5",
+      "description": "다섯 번째 모션 그래픽의 상세 설명입니다."
+    },
+    {
+      "category": "video",
+      "video": "videos/video6.mp4",
+      "image": "imgs/video6.jpg",
+      "h2": "영상 제목 6",
+      "p": "여섯 번째 영상의 설명입니다.",
+      "title": "비디오 6",
+      "description": "여섯 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion6.mp4",
+      "image": "imgs/motion6.jpg",
+      "h2": "모션 그래픽 제목 6",
+      "p": "여섯 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 6",
+      "description": "여섯 번째 모션 그래픽의 상세 설명입니다."
     }
   ]
 }
