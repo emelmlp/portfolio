@@ -81,8 +81,8 @@ nav.menu {
   margin-bottom: 14px;
   padding-right: 20px;
 }
-.main .sort li {
-}
+/* .main .sort li {
+} */
 .main .sort li a {
   display: block;
   line-height: 1rem;
@@ -191,8 +191,8 @@ nav.menu {
 }
 /* 1200 미만 */
 @media screen and (max-width: 1199px) {
-  .logo a {
-    /* font-size: 1.8rem; */
+  h2 {
+    font-size: 1.4rem;
   }
 
   .topbtn {
@@ -205,12 +205,8 @@ nav.menu {
   .section article {
     width: 33.333%;
   }
-}
-
-/* 680 미만 */
-@media screen and (max-width: 679px) {
-  .section article {
-    width: 50%;
+  h2 {
+    font-size: 1.3rem;
   }
   .topbtn {
     font-size: 1.5rem;
@@ -218,6 +214,16 @@ nav.menu {
   .topbtn a {
     font-size: 2.5rem;
     color: #ddd;
+  }
+}
+
+/* 680 미만 */
+@media screen and (max-width: 679px) {
+  .section article {
+    width: 50%;
+  }
+  h2 {
+    font-size: 1.2rem;
   }
 }
 

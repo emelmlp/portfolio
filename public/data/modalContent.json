@@ -1,0 +1,17 @@
+[
+  {
+    "video": "videos/video1.mp4",
+    "title": "Lorem, ipsum dolor.",
+    "description": "Lorem ipsum dolor sit amet consectetur."
+  },
+  {
+    "video": "videos/motion1.mp4",
+    "title": "Lorem, ipsum dolor.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "video": "videos/video2.mp4",
+    "title": "Lorem, ipsum dolor.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore."
+  }
+]

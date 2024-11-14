@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "category": "video",
+      "video": "videos/video1.mp4",
+      "image": "imgs/video1.jpg",
+      "h2": "영상 제목 1",
+      "p": "이것은 첫 번째 영상의 설명입니다.",
+      "title": "비디오 1",
+      "description": "첫 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion1.mp4",
+      "image": "imgs/motion1.jpg",
+      "h2": "모션 그래픽 제목 1",
+      "p": "첫 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 1",
+      "description": "첫 번째 모션 그래픽의 상세 설명입니다."
+    },
+    {
+      "category": "video",
+      "video": "videos/video2.mp4",
+      "image": "imgs/video2.jpg",
+      "h2": "영상 제목 2",
+      "p": "두 번째 영상의 설명입니다.",
+      "title": "비디오 2",
+      "description": "두 번째 영상의 상세 설명입니다."
+    },
+    {
+      "category": "motion",
+      "video": "videos/motion2.mp4",
+      "image": "imgs/motion2.jpg",
+      "h2": "모션 그래픽 제목 2",
+      "p": "두 번째 모션 그래픽의 설명입니다.",
+      "title": "모션 2",
+      "description": "두 번째 모션 그래픽의 상세 설명입니다."
+    }
+  ]
+}
