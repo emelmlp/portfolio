@@ -13,13 +13,15 @@
   width: 100%;
 }
 .header-inner {
-  position: relative;
+  position: fixed;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 8vh;
   margin: 0 auto;
   padding: 0 10%;
   text-align: center;
+  z-index: 10000;
+  background-color: #000;
 }
 .logo {
   position: relative;
@@ -51,23 +53,23 @@ nav.menu {
   display: block;
   line-height: 8vh;
   font-size: 1.2rem;
-  padding: 0 15px;
+  padding: 0 1rem;
   letter-spacing: -0.25px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
-.work a span {
-  border-bottom: solid 2px;
-}
 .menu ul li a:hover {
   color: #80dfff; /* 밝은 네온블루 */
+}
+.work a span {
+  border-bottom: solid 2px;
 }
 
 /* main */
 .main {
   position: relative;
   width: 100vw;
-  height: 100%;
+  height: 84%;
   margin: 0 auto;
   padding: 70px 0 80px;
   background-color: #000;
@@ -120,18 +122,18 @@ nav.menu {
   width: 80%;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.section article:hover div img{
+.section article:hover div img {
   opacity: 0.75;
 }
 /* 영상 제목 */
-.section article div h2{
+.section article div h2 {
   font-size: 2rem;
   margin-top: 0.3rem;
 }
 /* 영상 설명 */
 .section article div p {
   font-size: 1.2rem;
-  color:#80dfff;
+  color: #80dfff;
 }
 
 .topbtn {
@@ -188,7 +190,7 @@ nav.menu {
 }
 /* 영상 설명란 기본 스타일 */
 .modal-content p {
-  font-size: 1.2rem;  /* 기본 폰트 크기 */
+  font-size: 1.2rem; /* 기본 폰트 크기 */
   color: #ccc; /* 기본 텍스트 색상 */
   text-align: center;
   line-height: 1.5;
@@ -219,7 +221,6 @@ nav.menu {
   border-radius: 8px;
 }
 
-
 /* footer */
 .footer {
   position: relative;
@@ -246,7 +247,7 @@ nav.menu {
   .section article {
     width: 50%;
   }
-  .section article div h2{
+  .section article div h2 {
     font-size: 1.6rem;
   }
   .section article div p {
@@ -255,14 +256,14 @@ nav.menu {
   .logo a span {
     font-size: 2rem;
   }
-  .menu ul li a{
+  .menu ul li a {
     font-size: 1.1rem;
   }
-  .main .sort li a{
+  .main .sort li a {
     font-size: 0.9rem;
   }
   .topbtn {
-      display: block;
+    display: block;
   }
   .modal-content {
     width: 90vw; /* 더 작은 화면에서는 90% */
@@ -274,16 +275,16 @@ nav.menu {
   }
   .modal-content p {
     font-size: 1.1rem;
-  .close{
-    font-size: 3.6rem;
+    .close {
+      font-size: 3.6rem;
+    }
+    .modal-content p img {
+      width: 70%; /* 이미지 크기 조정 */
+    }
+    .footer p {
+      font-size: 0.9rem;
+    }
   }
-  .modal-content p img {
-    width: 70%; /* 이미지 크기 조정 */
-  }
-    .footer p{
-    font-size: 0.9rem;
-  }
-}
 }
 /* 540 이하 (모바일) */
 @media screen and (max-width: 540px) {
@@ -291,8 +292,8 @@ nav.menu {
     width: 100%;
   }
   /* 영상 제목 */
-  .section article div h2{
-    font-size: 1.2rem; 
+  .section article div h2 {
+    font-size: 1.2rem;
   }
   /* 영상 설명 */
   .section article div p {
@@ -301,10 +302,10 @@ nav.menu {
   .logo a span {
     font-size: 1.5rem;
   }
-  .menu ul li a{
-    font-size: 1rem; 
+  .menu ul li a {
+    font-size: 1rem;
   }
-  .main .sort li a{
+  .main .sort li a {
     font-size: 0.675rem;
   }
   .topbtn {
@@ -327,10 +328,10 @@ nav.menu {
   .modal-content p img {
     width: 80%; /* 이미지 크기 조정 */
   }
-  .close{
+  .close {
     font-size: 2.7rem;
   }
-    .footer p{
+  .footer p {
     font-size: 0.675rem;
   }
 }
