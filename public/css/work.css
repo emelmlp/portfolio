@@ -50,7 +50,7 @@ nav.menu {
   position: relative;
   display: block;
   line-height: 8vh;
-  font-size: 15px;
+  font-size: 1.2rem;
   padding: 0 15px;
   letter-spacing: -0.25px;
   font-weight: 600;
@@ -67,6 +67,7 @@ nav.menu {
 .main {
   position: relative;
   width: 100vw;
+  height: 100%;
   margin: 0 auto;
   padding: 70px 0 80px;
   background-color: #000;
@@ -108,34 +109,43 @@ nav.menu {
 .section article div {
   width: 100%;
   height: 100%;
-  font-weight: normal;
   text-align: center;
   padding: 1.4rem;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .section article:hover div {
   transform: scale(1.05);
-  opacity: 0.9;
 }
 .section article div img {
-  width: 100%;
+  width: 80%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
+.section article:hover div img{
+  opacity: 0.75;
+}
+/* 영상 제목 */
+.section article div h2{
+  font-size: 2rem;
+  margin-top: 0.3rem;
+}
+/* 영상 설명 */
 .section article div p {
-  font-size: 12px;
+  font-size: 1.2rem;
+  color:#80dfff;
 }
 
 .topbtn {
   position: fixed;
-  bottom: 1%;
-  right: 30px;
+  bottom: 3%;
+  right: 3%;
   z-index: 10; /* 다른 요소들 위에 배치되도록 */
   font-size: 2rem;
-  color: #ddd;
+  color: #00bfff;
   display: none;
 }
 .topbtn a {
   font-size: 3rem;
-  color: #ddd;
+  color: #00bfff;
 }
 
 /* 모달 */
@@ -146,7 +156,7 @@ nav.menu {
   top: 0;
   left: 0;
   width: 100vw;
-  max-height: 100vh; /* 화면의 높이를 넘어가지 않도록 제한 */
+  height: 100vh; /* 화면의 높이를 넘어가지 않도록 제한 */
   overflow-y: auto; /* 내용이 많으면 스크롤 생성 */
   background-color: #000;
   justify-content: center;
@@ -157,82 +167,58 @@ nav.menu {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 영상이 상단에 배치 */
+  justify-content: flex-start;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto; /* 내용이 많으면 스크롤 생성 */
+  width: 80vw; /* 모달 크기 비율로 설정 */
+  max-width: 1200px; /* 최대 크기 설정 */
+  height: 80vh; /* 모달 높이 비율로 설정 */
+  overflow-y: auto;
+  margin: 5vh auto; /* 화면 크기에 따라 마진 조정 */
+  padding: 5vh 5vw; /* 패딩도 비율로 설정 */
   border-radius: 8px;
-  margin: 5vh auto;
-  padding: 20px;
+  background-color: #111; /* 어두운 배경 */
+}
+/* 모달 내 제목 (h2) */
+.modal-content h2 {
+  font-size: 2rem; /* 기본값 설정 */
+  font-weight: 600;
+  color: #fff; /* 흰색으로 설정 */
+  margin-top: 2vh; /* 제목과 내용 사이에 여백 */
+  text-align: center; /* 제목 가운데 정렬 */
+}
+/* 영상 설명란 기본 스타일 */
+.modal-content p {
+  font-size: 1.2rem;  /* 기본 폰트 크기 */
+  color: #ccc; /* 기본 텍스트 색상 */
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 2vh;
+}
+.modal-content p img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto; /* 이미지 비율 유지 */
+  object-fit: contain; /* 컨테이너에 맞춰 축소 또는 확대 */
 }
 .close {
   position: absolute;
-  top: 5%;
-  right: 10%;
-  font-size: 3rem;
+  top: 2.5%;
+  right: 5%;
+  font-size: 4rem;
   cursor: pointer;
   color: #fff;
+  z-index: 9999;
 }
 .modal video,
 .modal iframe {
-  width: 60%;
+  width: 80%;
   height: auto;
+  margin-top: 5%;
   aspect-ratio: 16 / 9; /* 영상의 가로세로 비율 유지 */
   border-radius: 8px;
 }
 
-/* 반응형을 위한 미디어쿼리 작성 */
-/* 1600 미만 */
-@media screen and (max-width: 1599px) {
-  .section article {
-    width: 33.333%;
-  }
-}
-/* 1200 미만 */
-@media screen and (max-width: 1199px) {
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  .topbtn {
-    display: block;
-  }
-}
-
-/* 900 미만 */
-@media screen and (max-width: 899px) {
-  .section article {
-    width: 33.333%;
-  }
-  h2 {
-    font-size: 1.3rem;
-  }
-  .topbtn {
-    font-size: 1.5rem;
-  }
-  .topbtn a {
-    font-size: 2.5rem;
-    color: #ddd;
-  }
-}
-
-/* 680 미만 */
-@media screen and (max-width: 679px) {
-  .section article {
-    width: 50%;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
-/* 540 미만 */
-@media screen and (max-width: 539px) {
-  .section article {
-    width: 100%;
-  }
-}
 
 /* footer */
 .footer {
@@ -248,8 +234,103 @@ nav.menu {
   align-items: center;
 }
 .footer p {
-  font-size: 0.9em;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Arial";
   text-align: center;
+}
+
+/* 반응형을 위한 미디어쿼리 작성 */
+/* 1200 이하 */
+@media screen and (max-width: 1200px) {
+  .section article {
+    width: 50%;
+  }
+  .section article div h2{
+    font-size: 1.6rem;
+  }
+  .section article div p {
+    font-size: 1.1rem;
+  }
+  .logo a span {
+    font-size: 2rem;
+  }
+  .menu ul li a{
+    font-size: 1.1rem;
+  }
+  .main .sort li a{
+    font-size: 0.9rem;
+  }
+  .topbtn {
+      display: block;
+  }
+  .modal-content {
+    width: 90vw; /* 더 작은 화면에서는 90% */
+    height: 70vh; /* 높이도 비율로 줄여줌 */
+    margin: 10vh auto; /* 중앙에 맞추기 */
+  }
+  .modal-content h2 {
+    font-size: 1.6rem; /* 화면이 좁아지면 제목 크기 줄이기 */
+  }
+  .modal-content p {
+    font-size: 1.1rem;
+  .close{
+    font-size: 3.6rem;
+  }
+  .modal-content p img {
+    width: 70%; /* 이미지 크기 조정 */
+  }
+    .footer p{
+    font-size: 0.9rem;
+  }
+}
+}
+/* 540 이하 (모바일) */
+@media screen and (max-width: 540px) {
+  .section article {
+    width: 100%;
+  }
+  /* 영상 제목 */
+  .section article div h2{
+    font-size: 1.2rem; 
+  }
+  /* 영상 설명 */
+  .section article div p {
+    font-size: 1rem;
+  }
+  .logo a span {
+    font-size: 1.5rem;
+  }
+  .menu ul li a{
+    font-size: 1rem; 
+  }
+  .main .sort li a{
+    font-size: 0.675rem;
+  }
+  .topbtn {
+    font-size: 1.5rem;
+  }
+  .topbtn a {
+    font-size: 2.25rem;
+  }
+  .modal-content {
+    width: 95vw; /* 화면을 더 많이 차지하도록 비율을 키움 */
+    height: 60vh; /* 높이도 줄이기 */
+    margin: 15vh auto; /* 화면에 맞게 마진 조정 */
+  }
+  .modal-content h2 {
+    font-size: 1.2rem;
+  }
+  .modal-content p {
+    font-size: 1rem;
+  }
+  .modal-content p img {
+    width: 80%; /* 이미지 크기 조정 */
+  }
+  .close{
+    font-size: 2.7rem;
+  }
+    .footer p{
+    font-size: 0.675rem;
+  }
 }

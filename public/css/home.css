@@ -6,12 +6,15 @@
   overflow: hidden;
   min-width: 320px;
 }
-
 /* header */
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
   height: 8vh;
-  width: 100%;
+  width: 100vw;
+  padding: 0 10%;
+  background-color: black;
+  z-index: 1;
 }
 .header-inner {
   position: relative;
@@ -19,15 +22,14 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 10%;
   text-align: center;
 }
 .logo {
-  position: relative;
+  position: absolute;
+  left: 0;
+  margin: 0;
   display: inline-block;
-  width: 10vw;
   line-height: 8vh;
-  margin: 0 auto;
 }
 .logo a span {
   font-size: 2.2rem;
@@ -35,9 +37,9 @@
 }
 
 nav.menu {
-  position: relative;
+  position: absolute;
+  right: 0;
   display: flex;
-  width: 70vw;
   justify-content: flex-end;
 }
 .menu ul {
@@ -51,8 +53,8 @@ nav.menu {
   position: relative;
   display: block;
   line-height: 8vh;
-  font-size: 15px;
-  padding: 0 15px;
+  font-size: 1rem;
+  padding: 0 1rem;
   letter-spacing: -0.25px;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -60,29 +62,36 @@ nav.menu {
 .menu ul li a:hover {
   color: #80dfff; /* 밝은 네온블루 */
 }
+
 /* main */
 .main {
   position: relative;
-  height: 84vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   margin: 0;
-  background-color: #000;
 }
 .main div {
   height: 100%;
   width: 100%;
 }
 .main div video {
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 100%;
-  height: 100%;
+  height: 130%;
 }
 
 /* footer */
 .footer {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   height: 8vh;
+  background-color: black;
+  z-index: 1;
 }
 .footer div {
   display: flex;
@@ -92,8 +101,49 @@ nav.menu {
   align-items: center;
 }
 .footer p {
-  font-size: 0.9em;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Arial";
   text-align: center;
+}
+
+/* 해상도별 로고,메뉴 크기 조절하기 */
+/* 950 이하 */
+@media screen and (max-width: 950px) {
+.logo a span{
+  font-size: 1.75rem;
+}
+.menu ul li a{
+  font-size: 0.8rem;
+}
+.footer p{
+  font-size: 0.7rem;
+}
+}
+
+/* 반응형을 위한 미디어쿼리 작성 */
+/* 1200 이하 */
+@media screen and (max-width: 1200px) {
+  .logo a span {
+    font-size: 2rem;
+  }
+  .menu ul li a{
+    font-size: 0.9rem;
+  }
+    .footer p{
+    font-size: 0.9rem;
+  }
+}
+
+/* 540 이하 */
+@media screen and (max-width: 540px) {
+  .logo a span {
+    font-size: 1.5rem;
+  }
+  .menu ul li a{
+    font-size: 0.675rem;
+  }
+    .footer p{
+    font-size: 0.675rem;
+  }
 }

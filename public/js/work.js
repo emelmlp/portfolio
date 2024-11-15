@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
       const articlesHTML = data.articles
         .map((article) => {
           return `
-          <article class="category-${article.category}" data-video="${article.video}">
+          <article class="${article.category}" data-video="${article.video}" data-title="${article.h2}" data-description="${article.description}">
             <div>
               <img src="${article.image}" alt="${article.title}">
               <h2>${article.h2}</h2>
@@ -23,11 +23,11 @@ window.addEventListener("load", () => {
       // 아티클 HTML 삽입
       section.innerHTML = articlesHTML;
 
-      // Isotope 초기화 (setTimeout으로 지연) : 지연 안할 시 스타일보다 먼저 적용됐음.
+      // Isotope 초기화 (setTimeout으로 지연)
       setTimeout(() => {
         const grid = new Isotope(section, {
           itemSelector: "article",
-          columnWidth: 3,
+          layoutMode: "fitRows",
           transitionDuration: "0.5s",
         });
 
@@ -37,9 +37,9 @@ window.addEventListener("load", () => {
           btn.addEventListener("click", (e) => {
             e.preventDefault();
 
-            const sort = btn.querySelector("a").getAttribute("href");
+            const sortCategory = btn.querySelector("a").getAttribute("href").replace("#", ".");
             grid.arrange({
-              filter: sort,
+              filter: sortCategory === ".ALL" ? "*" : sortCategory,
             });
 
             btns.forEach((item) => {
@@ -54,21 +54,39 @@ window.addEventListener("load", () => {
       // 모달 관련
       const modal = document.getElementById("video-modal");
       const modalVideo = document.getElementById("modal-video");
+      const modalTitle = modal.querySelector("h2");
+      const modalDescription = modal.querySelector("p");
       const closeModal = document.querySelector(".close");
 
       const articleElements = document.querySelectorAll(".section article");
       articleElements.forEach((article) => {
         article.addEventListener("click", () => {
           const videoSrc = article.dataset.video;
+          const title = article.dataset.title;
+          const description = article.dataset.description;
+
           modal.style.display = "flex";
           modalVideo.src = videoSrc;
+          modalTitle.textContent = title;
+          modalDescription.innerHTML = description;
           modalVideo.play();
         });
       });
 
+      // 클로즈 버튼 눌러 모달 닫기
       closeModal.addEventListener("click", () => {
         modal.style.display = "none";
         modalVideo.pause();
+        modalVideo.src = ""; // 닫을 때 비디오 초기화
+      });
+
+      // 모달 외부 클릭 시 닫기
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+          modalVideo.pause();
+          modalVideo.currentTime = 0;
+        }
       });
     })
     .catch((error) => {
