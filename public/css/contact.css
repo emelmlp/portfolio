@@ -68,46 +68,85 @@ nav.menu {
 
 /* main */
 .main {
-  position: relative;
   display: flex;
   width: 100vw;
   height: 84vh;
   margin: 0 auto;
-}
-.profile {
   position: relative;
+  overflow-x: hidden;
 }
-.main div > img {
-  position: absolute;
+
+/* 프로필 이미지 */
+.profile {
+}
+.profile img {
+  position: fixed; /* 고정 */
   top: 50%;
   left: 5vw;
+  transform: translateY(-50%);
   width: 25vw;
   height: 25vw;
-  transform: translateY(-50%);
-  z-index: 999;
-  border-radius: 50%; /* 원형으로 만드는 속성 */
-  object-fit: cover; /* 이미지가 잘리지 않게 조정 */
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10; /* 프로필 이미지가 항상 위에 있도록 설정 */
 }
-.section {
-  position: relative;
-  width: 100%;
-  height: 100%;
+/* 스크롤되는 콘텐츠 */
+.content {
+  position: absolute; /* 스크롤이 가능한 영역 */
+  top: 0;
+  left: 30vw; /* 프로필 이미지 오른쪽 */
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll; /* 세로 스크롤 가능 */
+  padding: 2rem;
 }
-.article {
-  width: 100%;
-  height: 100%;
+
+section {
+  height: 84vh; /* 각 섹션을 전체 화면 높이로 설정 */
+  padding: 20px;
   background-color: #fff;
+  margin-bottom: 20px;
 }
-/* contact-me */
-.contact-me ul li {
+
+.about-me,
+.contact-me {
+  background-color: #f0f0f0;
+}
+
+.about-me {
+}
+.about-me article {
+}
+.about-me article p {
+  height: 40vh;
+  font-family: "arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.about-me article ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-.contact-me ul li span {
-  margin-left: 1rem;
+.about-me article ul li {
+  display: flex;
 }
+.about-me article ul li img {
+  width: 4vw;
+  margin: 1vw;
+}
+
+/* 미디어 쿼리 적용 */
+/* 테블릿 사이즈 */
+/* @media screen and (max-width: 768px) {
+  .profile img {
+    top: 0;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .content {
+    left: 0;
+  }
+} */
 /* footer */
 .footer {
   position: relative;
