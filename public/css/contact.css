@@ -76,9 +76,8 @@ nav.menu {
   overflow-x: hidden;
 }
 
-/* 프로필 이미지 */
-.profile {
-}
+/* .profile {
+} */
 .profile img {
   position: fixed; /* 고정 */
   top: 50%;
@@ -104,96 +103,76 @@ nav.menu {
 section {
   height: 84vh; /* 각 섹션을 전체 화면 높이로 설정 */
   padding: 20px;
-  background-color: #fff;
+  background-color: #888;
   margin-bottom: 20px;
+  color: #333;
 }
 
-.about-me,
-.contact-me {
-  background-color: #f0f0f0;
+article {
+  width: 100%;
+  height: 100%;
 }
-
-.about-me {
-}
-.about-me article {
-}
-.about-me article p {
-  height: 40vh;
+article p {
+  display: block;
   font-family: "arial", sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
-.about-me article ul {
+article ul {
   display: flex;
+  gap: 1vw;
 }
-.about-me article ul li {
+article ul li {
   display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  gap: 0.5vw;
 }
-.about-me article ul li img {
+article ul li i {
+  line-height: 1rem;
+}
+article ul li img {
   width: 4vw;
   margin: 1vw;
 }
 
-/* 미디어 쿼리 적용 */
-/* 테블릿 사이즈 */
-/* @media screen and (max-width: 768px) {
-  .profile img {
-    top: 0;
-    width: 30vw;
-    height: 30vw;
-  }
-
-  .content {
-    left: 0;
-  }
-} */
 /* footer */
 .footer {
   position: relative;
   width: 100%;
   height: 8vh;
 }
-.footer div {
+.overlay {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
-.footer p {
+.overlay .copyright {
+  position: relative;
   font-size: 1rem;
+  line-height: 1rem;
   font-weight: 400;
   font-family: "Arial";
   text-align: center;
 }
-.footer div .credit {
+.copyright .credit {
+  font-size: 0.8rem;
   position: absolute;
+  margin-top: 0.5vh;
   display: flex;
-  justify-content: flex-end;
-  font-size: 1rem;
-  color: #fff;
-  padding-right: 2rem;
+  color: #333;
 }
 .credit a {
-  display: flex;
-  font-size: 0.7rem;
-  color: #fff;
+  color: #333;
   margin-left: 1rem;
-}
-
-/* 반응형을 위한 미디어쿼리 작성 */
-/* 1200 이하 */
-@media screen and (max-width: 1200px) {
-  .logo a span {
-    font-size: 2rem;
-  }
-  .menu ul li a {
-    font-size: 0.9rem;
-  }
-  .footer p {
-    font-size: 0.9rem;
-  }
+  white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+  overflow: hidden; /* 넘친 텍스트 숨기기 */
 }
 
 /* 반응형을 위한 미디어쿼리 작성 */
@@ -205,8 +184,11 @@ section {
   .menu ul li a {
     font-size: 1.1rem;
   }
-  .footer p {
+  .copyright {
     font-size: 0.9rem;
+  }
+  .copyright .credit {
+    font-size: 0.75rem;
   }
 }
 
@@ -218,7 +200,24 @@ section {
   .menu ul li a {
     font-size: 1rem;
   }
-  .footer p {
+  .main {
+    flex-direction: column;
+  }
+  .profile {
+    position: relative;
+    display: none;
+  }
+  .content {
+    position: relative;
+    left: 0;
+  }
+  h1 {
+    margin: 0.4rem 0;
+  }
+  .contact-list {
+    flex-direction: column;
+  }
+  .copyright {
     font-size: 0.675rem;
   }
 }
