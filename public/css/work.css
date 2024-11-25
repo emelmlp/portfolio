@@ -120,11 +120,11 @@ nav.menu {
   height: 100%;
   text-align: center;
   padding: 1.4rem;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* transition: transform 0.5s ease, opacity 0.5s ease; */
 }
-.section article:hover div {
+/* .section article:hover div {
   transform: scale(1.05);
-}
+} */
 /* .section article div img {
   width: 80%;
   transition: transform 0.5s ease, opacity 0.5s ease;

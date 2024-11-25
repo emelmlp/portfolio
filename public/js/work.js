@@ -23,37 +23,73 @@ window.addEventListener("load", () => {
       // 아티클 HTML 삽입
       section.innerHTML = articlesHTML;
 
-      // Isotope 초기화
-      const grid = new Isotope(section, {
-        itemSelector: "article",
-        layoutMode: "fitRows",
-        transitionDuration: "0.5s",
-      });
+      // 모든 이미지가 로드된 후 Isotope 초기화
+      imagesLoaded(section, function () {
+        const grid = new Isotope(section, {
+          itemSelector: "article",
+          layoutMode: "fitRows",
+          transitionDuration: "0.5s",
+        });
 
-      // 레이아웃 조정
-      requestAnimationFrame(() => {
-        grid.layout();
-      });
+        // 목록별 작업물 보기
+        const btns = document.querySelectorAll(".sort li");
+        btns.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
 
-      // 목록별 작업물 보기
-      const btns = document.querySelectorAll(".sort li");
-      btns.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          e.preventDefault();
+            const sortCategory = btn
+              .querySelector("a")
+              .getAttribute("href")
+              .replace("#", ".");
+            grid.arrange({
+              filter: sortCategory === ".ALL" ? "*" : sortCategory,
+            });
 
-          const sortCategory = btn
-            .querySelector("a")
-            .getAttribute("href")
-            .replace("#", ".");
-          grid.arrange({
-            filter: sortCategory === ".ALL" ? "*" : sortCategory,
+            btns.forEach((item) => {
+              item.classList.remove("on");
+            });
+
+            btn.classList.add("on");
           });
+        });
 
-          btns.forEach((item) => {
-            item.classList.remove("on");
+        // 모달 관련 기능 추가
+        const modal = document.getElementById("video-modal");
+        const modalVideo = document.getElementById("modal-video");
+        const modalTitle = modal.querySelector("h2");
+        const modalDescription = modal.querySelector("p");
+        const closeModal = document.querySelector(".close");
+
+        // 아티클 클릭 시 모달 열기
+        const articleElements = document.querySelectorAll(".section article");
+        articleElements.forEach((article) => {
+          article.addEventListener("click", () => {
+            const videoSrc = article.dataset.video;
+            const title = article.dataset.title;
+            const description = article.dataset.description;
+
+            modal.style.display = "flex";
+            modalVideo.src = videoSrc;
+            modalTitle.textContent = title;
+            modalDescription.innerHTML = description;
+            modalVideo.play();
           });
+        });
 
-          btn.classList.add("on");
+        // 모달 닫기 버튼
+        closeModal.addEventListener("click", () => {
+          modal.style.display = "none";
+          modalVideo.pause();
+          modalVideo.src = ""; // 닫을 때 비디오 초기화
+        });
+
+        // 모달 외부 클릭 시 닫기
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+          }
         });
       });
     })
