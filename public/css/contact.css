@@ -1,3 +1,7 @@
+html,
+body {
+  letter-spacing: -0.3px; /* 기존보다 여백을 늘림 */
+}
 /* wrap */
 .wrap {
   width: 100vw;
@@ -124,7 +128,7 @@ article {
 }
 .contact-me span,
 .about-me p {
-  color: #80dfff;
+  color: #99e5ff; /* 부드러운 블루 */
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
@@ -140,6 +144,10 @@ article ul li {
   line-height: 1rem;
   gap: 0.5vw;
 }
+.contact-list {
+  flex-direction: column;
+  align-items: flex-start;
+}
 .contact-list li i {
   color: #00bfff;
   font-size: 1.5rem;
@@ -147,14 +155,14 @@ article ul li {
 }
 
 .contact-list li span {
-  color: #80dfff;
+  color: #99e5ff;
   font-size: 1.2rem;
 }
 
 .contact-list li:hover span {
-  color: #99e5ff;
+  color: #80dfff; /* 호버 시 살짝 밝게 */
 }
-article ul li img {
+.used-tools ul li img {
   width: 4vw;
   margin: 1vw;
 }
@@ -190,13 +198,15 @@ article ul li img {
   color: #333;
 }
 .credit a {
-  color: #333;
+  color: #666;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
   margin-left: 1rem;
   white-space: nowrap; /* 텍스트를 한 줄로 유지 */
   overflow: hidden; /* 넘친 텍스트 숨기기 */
 }
 .credit a:hover {
-  color: #666;
+  border-color: #999; /* 호버 시 밑줄 효과 */
 }
 /* 반응형을 위한 미디어쿼리 작성 */
 /* 1200 이하 */
@@ -239,6 +249,14 @@ article ul li img {
   }
   .contact-list {
     flex-direction: column;
+  }
+  .used-tools ul {
+    flex-wrap: nowrap; /* 한 줄 유지 */
+    gap: 2vw; /* 간격 조정 */
+  }
+  .used-tools ul li img {
+    width: 6vw; /* 크기 키움 */
+    margin: 0.5vw;
   }
   .copyright {
     font-size: 0.675rem;
