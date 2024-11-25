@@ -104,9 +104,16 @@ nav.menu {
   flex-wrap: wrap;
   padding: 30px 0;
 }
-.section article {
+/* .section article {
   width: 33.333%;
   padding: 1.2rem;
+} */
+.section article {
+  width: calc(33.333% - 2rem);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .section article div {
   width: 100%;
@@ -118,12 +125,17 @@ nav.menu {
 .section article:hover div {
   transform: scale(1.05);
 }
-.section article div img {
+/* .section article div img {
   width: 80%;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .section article:hover div img {
   opacity: 0.75;
+} */
+.section article img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 /* 영상 제목 */
 .section article div h2 {
