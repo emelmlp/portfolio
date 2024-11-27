@@ -88,7 +88,7 @@ nav.menu {
   left: 5vw;
   transform: translateY(-50%);
   width: 25vw;
-  height: 25vw;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   z-index: 10; /* 프로필 이미지가 항상 위에 있도록 설정 */
@@ -237,8 +237,11 @@ article ul li {
     flex-direction: column;
   }
   .profile {
-    position: relative;
     display: none;
+  }
+
+  .about-me {
+    position: relative;
   }
   .content {
     position: relative;
