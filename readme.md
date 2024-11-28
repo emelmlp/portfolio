@@ -1,38 +1,35 @@
-# 1. 초안 페이지 완성 및 수정본 페이지 작업
+####[포트폴리오 바로가기](https://portfolio-emelmlp.vercel.app/)
 
-## 1-1. 불필요한 햄버거 버튼 삭제
-
-햄버거 버튼을 통해 메뉴탭을 열어서 페이지를 바꾸는 건 불필요한 UX라 판단하여 삭제
-
-## 1-2. 컬러 변경
-
-<!--  배경 -->
-
-배경색 흰색 -> 검정색으로 로고와 네비게이션 메뉴탭에만 시선가도록 불필요한 색 삭제
-배경색에 따라 포인트 색 선명한 네온블루로 변경
-
-<!-- 모달 -->
-
-배경색과 통일하여 모달영역 색 변경 #fff -> #000
-
-## 1-3. Work 페이지 반응형 레이아웃
-
-<!-- 레이아웃 화면 -->
-
-화면비에 따른 아티클 노출 개수 기본 4 -> 3 조정
-탑버튼 크기 조정
-
-<!-- 모달 -->
-
-영상 제목과 기획의도 및 과정 서술란을 영상 아래 순차적으로 배치
-설명란이 모자라면 아래로 스크롤 되도록 하여 필요없어진 더보기 버튼 삭제
-영상물의 가로,세로 비율을 16:9로 고정하여 통일감을 주고 한 눈에 감상하기 용이하게 변경
-
-<!-- 네비게이션 메뉴 -->
-
-메뉴 버튼 호버 시 밝은 색 전환으로 조작감 높이고
-메뉴 페이지 전환 시 밑줄로 페이지 직관성 올림
-
-# 2. contact 페이지 작업
-
-2-1. about me, contact me 섹션 구성
+<div align= "center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06686f,100:53e971&height=180&text=Wellcome&animation=&fontColor=000000&fontSize=60" />
+    </div>
+    <div align= "center"> 
+    <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 소개제목 </h2>  
+    <h4></h4>
+    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #c9d1d9;"> 내용 </div> 
+    </div>
+    <div align= "center">
+    <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🛠️ Tech Stacks </h2> <br> 
+    <div style="margin: 0 auto; text-align: center;" align= "center"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
+          <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white">
+          <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">
+          <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white">
+          <br/><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+          <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white">
+          <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=white">
+          <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+          <br/><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white">
+          <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white">
+          <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white">
+          </div>
+    </div>
+    <div align= "center">
+    <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🧑‍💻 Contact me </h2> <br> 
+    <div align= "center"> <a href=> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white&link="> </a>
+         <a href=mailto:> <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:"> </a>
+         <a href=> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white&link="> </a>
+          </div>  <br> 
+    <div align= "center">  </div> 
+    </div>
