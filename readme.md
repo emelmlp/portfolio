@@ -6,7 +6,7 @@
     <div align= "center"> 
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 안녕하세요! Emel의 포트폴리오입니다! </h2>  
     <h4></h4>
-    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #c9d1d9;"> 내용 </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #c9d1d9;"> 반응형으로 디자인하여 모바일, 데스크탑 환경에 각각 맞춰서 디자인했습니다. <br/><br/> 웹페이지 제작 기간 : 11 / 11 ~ 11 / 27 </div> 
     </div>
     <div align= "center">
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🛠️ Tech Stacks </h2> <br> 
