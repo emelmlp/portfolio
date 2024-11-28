@@ -4,7 +4,7 @@
     <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06686f,100:53e971&height=180&text=Wellcome&animation=&fontColor=000000&fontSize=60" />
     </div>
     <div align= "center"> 
-    <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 소개제목 </h2>  
+    <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 안녕하세요! Emel의 포트폴리오입니다! </h2>  
     <h4></h4>
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #c9d1d9;"> 내용 </div> 
     </div>
