@@ -5,7 +5,7 @@
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 안녕하세요! </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #c9d1d9;"> 영상 편집 디자이너 박희조의 포트폴리오입니다.</li>본 포트폴리오의 웹페이지는 모바일과 데스크탑 각각의 화면을 고려하여 반응형으로 디자인 하였습니다.</li><br/><br/></li></li>웹페이지 작업기간 : </li>11. 11 ~ 11. 27 </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #c9d1d9;"> 영상 편집 디자이너 박희조의 포트폴리오입니다.</li><br/>본 포트폴리오의 웹페이지는 모바일과 데스크탑 각각의 화면을 고려하여 반응형으로 디자인 하였습니다.</li><br/><br/></li></li>웹페이지 작업기간 : </li>11. 11 ~ 11. 27 </div> 
     </div>
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🛠️ Tech Stacks </h2> <br> 
