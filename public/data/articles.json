@@ -12,10 +12,19 @@
     {
       "category": "motion",
       "video": "https://www.youtube.com/embed/ZYpIJAVjHxE?si=4LObAVJZQQrOTj7E",
-      "image": "imgs/motion1.jpg",
+      "image": "imgs/character_thumbnail.png",
       "h2": "Dream",
       "p": "캐릭터 애니메이션",
       "title": "모션 1",
+      "description": ""
+    },
+    {
+      "category": "video",
+      "video": "https://www.youtube.com/embed/hVmj6mgxPUg?si=0TKjX-SU1Ryp_hQq",
+      "image": "imgs/wedding_thumbnail.png",
+      "h2": "웨딩",
+      "p": "웨딩영상 편집본",
+      "title": "비디오 2",
       "description": ""
     },
     {
@@ -24,7 +33,7 @@
       "image": "imgs/video1.jpg",
       "h2": "Work Flow",
       "p": "반응형 자막바 디자인",
-      "title": "비디오 1",
+      "title": "비디오 3",
       "description": "에프터이펙트의 익스프레션을 활용하여 반응형 자막바를 만들고 <br/>에센셜 그래픽스를 통해 프리미어 프로에서도 사용 할 템플릿을 제작하는 워크플로우 영상입니다. <br/> "
     }
   ]
