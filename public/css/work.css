@@ -226,13 +226,33 @@ nav.menu {
   color: #fff;
   z-index: 9999;
 }
-.modal video,
-.modal iframe {
-  width: 80%;
-  height: auto;
-  margin-top: 5%;
-  aspect-ratio: 16 / 9; /* 영상의 가로세로 비율 유지 */
+/* iframe wrapper 스타일 */
+#modal-video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.iframe-container {
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  min-height: 200px;
+}
+
+/* iframe 자체 스타일 */
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* footer */

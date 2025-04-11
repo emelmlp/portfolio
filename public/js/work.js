@@ -55,11 +55,11 @@ window.addEventListener("load", () => {
 
         // 모달 관련 기능 추가
         const modal = document.getElementById("video-modal");
-        const modalVideo = document.getElementById("modal-video");
+        const modalWrapper = document.getElementById("modal-video-wrapper");
         const modalTitle = modal.querySelector("h2");
         const modalDescription = modal.querySelector("p");
         const closeModal = document.querySelector(".close");
-
+        
         // 아티클 클릭 시 모달 열기
         const articleElements = document.querySelectorAll(".section article");
         articleElements.forEach((article) => {
@@ -67,28 +67,37 @@ window.addEventListener("load", () => {
             const videoSrc = article.dataset.video;
             const title = article.dataset.title;
             const description = article.dataset.description;
-
+        
             modal.style.display = "flex";
-            modalVideo.src = videoSrc;
             modalTitle.textContent = title;
             modalDescription.innerHTML = description;
-            modalVideo.play();
+        
+                // iframe 삽입
+    modalWrapper.innerHTML = `
+    <div class="iframe-container">
+      <iframe 
+        src="${videoSrc}"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="YouTube video"
+      ></iframe>
+    </div>
+  `;
           });
         });
-
+        
         // 모달 닫기 버튼
         closeModal.addEventListener("click", () => {
           modal.style.display = "none";
-          modalVideo.pause();
-          modalVideo.src = ""; // 닫을 때 비디오 초기화
+          modalWrapper.innerHTML = ""; // iframe 제거
         });
-
+        
         // 모달 외부 클릭 시 닫기
         window.addEventListener("click", (e) => {
           if (e.target === modal) {
             modal.style.display = "none";
-            modalVideo.pause();
-            modalVideo.currentTime = 0;
+            modalWrapper.innerHTML = ""; // iframe 제거
           }
         });
       });
