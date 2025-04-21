@@ -147,3 +147,9 @@ nav.menu {
     font-size: 0.675rem;
   }
 }
+
+/* 배경영상 공사중 */
+/* home.css나 global.css 가장 아래에 추가 */
+.video-background-container {
+  display: none;
+}
