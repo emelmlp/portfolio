@@ -2,12 +2,12 @@
   "articles": [
     {
       "category": "video",
-      "video": "https://www.youtube.com/embed/-p8lMfK9THo",
+      "video": "https://www.youtube.com/embed/hEElSu2lX3M",
       "image": "imgs/interview_shorts_thumbnail.png",
       "h2": "인터뷰",
       "p": "자기소개 인터뷰 숏폼",
       "title": "비디오 1",
-      "description": "숏폼 링크 : https://www.youtube.com/shorts/-p8lMfK9THo<br/>자기소개 인터뷰 영상을 숏폼으로 편집한 영상입니다.<br/>에프터이펙트, 포토샵을 이용한 자막바 에센셜 그래픽스 템플릿을 제작하였고<br/>색보정을 통해 배경색을 바꿔 강조색인 오렌지와 대비를 의도했습니다.<br/><br/>사용툴 - 에프터이펙트, 프리미어프로, 포토샵<br/>작업인원 - 1인"
+      "description": "숏폼 링크 : https://www.youtube.com/shorts/hEElSu2lX3M<br/>자기소개 인터뷰 영상을 숏폼으로 편집한 영상입니다.<br/>숏폼 형식 시청 시 [앰비언트 모드]가 켜져 있다면 배경색 번짐 현상이 생길 수 있습니다.<br/>에프터이펙트, 포토샵을 이용한 자막바 에센셜 그래픽스 템플릿을 제작하였고<br/>색보정을 통해 배경색을 바꿔 강조색인 오렌지와 대비를 의도했습니다.<br/><br/>사용툴 - 에프터이펙트, 프리미어프로, 포토샵<br/>작업인원 - 1인"
     },
     {
       "category": "motion",
