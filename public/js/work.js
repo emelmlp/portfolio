@@ -56,7 +56,6 @@ window.addEventListener("load", () => {
         // 모달 관련 기능 추가
         const modal = document.getElementById("video-modal");
         const modalWrapper = document.getElementById("modal-video-wrapper");
-        const modalTitle = modal.querySelector("h2");
         const modalDescription = modal.querySelector("p");
         const closeModal = document.querySelector(".close");
         
@@ -65,11 +64,9 @@ window.addEventListener("load", () => {
         articleElements.forEach((article) => {
           article.addEventListener("click", () => {
             const videoSrc = article.dataset.video;
-            const title = article.dataset.title;
             const description = article.dataset.description;
         
             modal.style.display = "flex";
-            modalTitle.textContent = title;
             modalDescription.innerHTML = description;
         
                 // iframe 삽입

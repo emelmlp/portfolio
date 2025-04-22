@@ -194,21 +194,13 @@ nav.menu {
   border-radius: 8px;
   background-color: #111; /* 어두운 배경 */
 }
-/* 모달 내 제목 (h2) */
-.modal-content h2 {
-  font-size: 2rem; /* 기본값 설정 */
-  font-weight: 600;
-  color: #fff; /* 흰색으로 설정 */
-  margin-top: 2vh; /* 제목과 내용 사이에 여백 */
-  text-align: center; /* 제목 가운데 정렬 */
-}
 /* 영상 설명란 기본 스타일 */
 .modal-content p {
   font-size: 1.2rem; /* 기본 폰트 크기 */
   color: #ccc; /* 기본 텍스트 색상 */
   text-align: center;
   line-height: 1.5;
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 .modal-content p img {
   display: block;
